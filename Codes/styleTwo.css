@@ -1,0 +1,647 @@
+*{
+	margin:0;
+	padding:0;
+}
+/*Header Banner*/
+.header{
+	min-height:80vh;
+	width:100%;
+	background-image:linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url('../Assets/AOTwebsite.jpg');
+	background-position:center;
+	background-size:cover;
+	position:relative;
+}
+
+/*-----Navigation Bar-----*/
+nav{
+	display:flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navBar{
+	flex:1;
+	text-align:right;
+}
+.navBar ul li{
+	list-style:none;
+	display:inline-block;
+	padding: 8px 12px;
+	position:relative;
+}
+
+.navBar ul li a{
+	color:white;
+	text-decoration:none;
+	font-size:13px;
+}
+.navBar ul li::after{
+	content:'';
+	width:0%;
+	height:2px;
+	background:orange;
+	display:block;
+	margin:auto;
+	transition: 0.5s;
+}
+.navBar ul li:hover::after{
+	transition: 0.5s;
+	width:100%;
+}
+
+nav h1{
+	list-style:none;
+	display:inline-block;
+	padding: 8px 12px;
+	position:relative;
+}
+
+nav h1 a{
+	color:white;
+	text-decoration:none;
+}
+/*----More about me Header on the banner---*/
+.moreAboutMe{
+	width:90%;
+	color:white;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+}
+.moreAboutMe h1{
+	font-size:62px;
+	
+}
+.moreAboutMe p{
+	margin:10px 0 40px;
+	font-size:16px;
+	color:white;
+}
+/*Banner Button*/
+.myButton{
+	display:inline-block;
+	text-decoration:none;
+	color:white;
+	border: 1px solid white;
+	padding:12px 34px;
+	font-size: 13px;
+	background:transparent;
+	position:relative;
+	cursor:pointer;
+}
+.myButton:hover{
+	border:1px solid blue;
+	background:blue;
+	transition:1s;
+	color: orange;
+}
+/*Strongest Trait*/
+
+.myStrongestTrait{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding-top:85px;
+}
+.myStrongestTrait h1{
+	font-weight:600;
+}
+
+.myStrongestTrait p{
+	color:white;
+	font-size:18px;
+	font-weight:300;
+	line-height:22px;
+	padding:10px;
+	
+}
+.row{
+	margin-top:5%;
+	display: flex;
+	justify-content:space-between;
+}
+.naruto{
+	flex-basis:46%;
+	background:linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url('../Assets/NarutoNeverGiveUp.jpg');
+	border-radius:10px;
+	margin-bottom:5%;
+	padding: 20px 12px;
+	box-sizing:border-box;
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	transition:0.5s;
+	
+}
+.naruto:hover{
+	box-shadow:0 0 20px 0px rgba(0,0,0,0.6);
+}
+.batman{
+	flex-basis:46%;
+	background-image:url('../Assets/TheBatmanNeverGiveUp.jpg');
+	border-radius:10px;
+	margin-bottom:5%;
+	padding: 20px 12px;
+	box-sizing:border-box;
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	transition:0.5s;
+}
+.batman:hover{
+	box-shadow:0 0 20px 0px rgba(0,0,0,0.6);
+}
+
+.row h3{
+	text-align:center;
+	font-weight:600;
+	margin:10px 0;
+}
+/*Favourite Scence*/
+.favourite_scene{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding-top:85px;
+}
+.favourite_scene h1{
+	font-weight:600;
+}
+
+.favourite_scene p{
+	color:black;
+	font-size:20px;
+	font-weight:300;
+	line-height:30px;
+	padding:10px;
+}
+
+.videoContainer{
+	padding-top:20px;
+}
+
+/*My Temperament*/
+.mytemperament{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding-top:85px;
+}
+.mytemperament h1{
+	font-weight:600;
+}
+.mytemperament p{	
+	color:black;
+	font-size:20px;
+	font-weight:300;
+	line-height:30px;
+	padding:10px;
+}
+.mytemperament img{
+	align-items: center;
+	width:75%;
+	border:1px solid blue;
+	
+}
+ /*Footer*/
+ .footer{
+	 background-image:linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url('../Assets/bleachwebsite.jpg');
+	 background-position: center; 
+	 width:100%;
+	 padding: 30px 0;
+	 text-align:center;
+	 color:white;
+ }
+ 
+ .footer h4{
+	
+	margin-top: 20px;
+	margin-bottom:25px;
+	font-weight:600;
+ }
+ .icons .fa{
+	 color:#f44336;
+	 margin: 0 13px;
+	 cursor:pointer;
+	 padding: 10px 0;
+ }
+ 
+ /*Development page*/
+ 
+.twevlePillars{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding-top:85px;
+ }
+ 
+ .twevlePillars h1{
+	 font-weight:600;
+ }
+ 
+.twevlePillars p{
+	color:black;
+	font-size:20px;
+	font-weight:300;
+	line-height:30px;
+	padding:10px;
+}
+
+.developmentRow{
+	margin-top:5%;
+	display: flex;
+	justify-content:space-between;
+}
+.container1Row1{
+	flex-basis:46%;
+	background-color:#FF4500;
+	border-radius:10px;
+	margin-bottom:5%;
+	padding: 20px 12px;
+	box-sizing:border-box;
+	transition:0.5s;
+	
+}
+.container1Row1:hover{
+	box-shadow:0 0 20px 0px rgba(0,0,0,0.6);
+}
+.container2Row1{
+	flex-basis:46%;
+	background-color:#FF4500;
+	border-radius:10px;
+	margin-bottom:5%;
+	padding: 20px 12px;
+	box-sizing:border-box;
+	transition:0.5s;
+}
+.container2Row1:hover{
+	box-shadow:0 0 20px 0px rgba(0,0,0,0.6);
+}
+
+.developmentRow h3{
+	text-align:center;
+	font-weight:600;
+	margin:10px 0;
+}
+
+.developmentRow2{
+	margin-top:2%;
+	display: flex;
+	justify-content:space-between;
+}
+.container1Row2{
+	flex-basis:46%;
+	background-color:#FF4500;
+	border-radius:10px;
+	margin-bottom:5%;
+	padding: 20px 12px;
+	box-sizing:border-box;
+	transition:0.5s;
+	
+}
+.container1Row2:hover{
+	box-shadow:0 0 20px 0px rgba(0,0,0,0.6);
+}
+.container2Row2{
+	flex-basis:46%;
+	background-color:#FF4500;
+	border-radius:10px;
+	margin-bottom:5%;
+	padding: 20px 12px;
+	box-sizing:border-box;
+	transition:0.5s;
+}
+.container2Row2:hover{
+	box-shadow:0 0 20px 0px rgba(0,0,0,0.6);
+}
+
+
+/*Three Skills I Have Acquired from my degree*/
+
+.threeSkills{
+	width:80%;
+	margin:auto;
+	text-align:center;
+	padding-top:50px;
+}
+
+
+.skillsRow{
+	margin-top:5%;
+	display: flex;
+	justify-content:space-between;
+}
+.skillsCol{
+	flex-basis:32%;
+	background-image:linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url('../Assets/ProblemSolvingSkill.jpg');
+	border-radius:10px;
+	margin-bottom:5%;
+	padding: 20px 12px;
+	box-sizing:border-box;
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	transition:0.5s;
+	
+}
+
+.skillsCol2{
+	flex-basis:32%;
+	background-image:linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url('../Assets/communicationSkill.jpg');
+	border-radius:10px;
+	margin-bottom:5%;
+	padding: 20px 12px;
+	box-sizing:border-box;
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	transition:0.5s;
+}
+
+.skillsCol3{
+	flex-basis:32%;
+	background-image:url('../Assets/creativeSkill.png');
+	border-radius:10px;
+	margin-bottom:5%;
+	padding: 20px 12px;
+	box-sizing:border-box;
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	transition:0.5s;
+}
+
+.skillsRow h3{
+	text-align:center;
+	font-weight:600;
+	margin:10px 0;
+}
+
+/*.container2Row1:hover{
+	box-shadow:0 0 20px 0px rgba(0,0,0,0.6);
+}
+
+.container1Row1:hover{
+	box-shadow:0 0 20px 0px rgba(0,0,0,0.6);
+}*/
+
+/*HOME PAGE*/
+/*Header Banner For HomePage*/
+.homeheader{
+	min-height:15vh;
+	width:100%;
+	background-color:#031540;
+}
+
+/*-----Navigation Bar-----*/
+nav{
+	display:flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navBar{
+	flex:1;
+	text-align:right;
+}
+.navBar ul li{
+	list-style:none;
+	display:inline-block;
+	padding: 8px 12px;
+	position:relative;
+}
+
+.navBar ul li a{
+	color:white;
+	text-decoration:none;
+	font-size:13px;
+}
+.navBar ul li::after{
+	content:'';
+	width:0%;
+	height:2px;
+	background:orange;
+	display:block;
+	margin:auto;
+	transition: 0.5s;
+}
+.navBar ul li:hover::after{
+	transition: 0.5s;
+	width:100%;
+}
+
+nav h1{
+	list-style:none;
+	display:inline-block;
+	padding: 8px 12px;
+	position:relative;
+}
+
+nav h1 a{
+	color:white;
+	text-decoration:none;
+}
+/*Home Main Section*/
+
+.homePage{
+	height:100vh;
+	background:linear-gradient(-90deg, #031540 65%, white 35%);
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:0 10%;
+}
+.homeImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background: #031540;
+  border-radius: 50%;
+  border: 25px solid white;
+  position: relative; /* Add position relative to the container */
+  overflow: hidden; /* Hide the overflowing parts of the image */
+}
+
+.homeImage img {
+  position: absolute; /* Position the image absolutely within the container */
+  max-width: 100%; /* Ensure the image doesn't exceed the container's size */
+  max-height: 100%; /* Ensure the image doesn't exceed the container's size */
+  object-fit: cover; /* Make the image cover the entire container while maintaining aspect ratio */
+  top: 0; /* Position from the top */
+  left: 10px; /* Position from the left */
+  right: 0; /* Position from the right */
+  bottom: 0; /* Position from the bottom */
+}
+
+.pageContent{
+	max-width: 600px;
+	color:white;
+	text-align:right;
+}
+.pageContent h1{
+	font-size:55px;
+	line-height:1.2;
+}
+.pageContent h3{
+	font-size:40px;
+	color:orange;
+}
+.pageContent p{
+	font-size:16px;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.pageContent .icons a{
+	display:inline-flex;
+	justify-content:center;
+	align-items:center;
+	width:40px;
+	height:40px;
+	background:transparent;
+	border: 2px solid white;
+	border-radius: 50%;
+	font-size: 20px;
+	color: orange;
+	text-decoration: none;
+	margin-left: 12px;
+	margin-bottom:25px;
+	transition:0.5s;
+}
+.homebutton{
+	padding: 10px 35px;
+	background: white;
+	border-radius:40px;
+	font-size:16px;
+	color:orange;
+	text-decoration:none;
+	font-weight:600;
+	letter-spacing:1px;
+}
+.homebutton:hover{
+	border:1px solid orange;
+	background:orange;
+	transition:1s;
+	color: black;
+}
+
+/*REFERENCES PAGE*/
+
+/* Style the reference section */
+.reference-list {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Style the heading */
+.reference-list h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style the list of reference items */
+.reference-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style each reference item */
+.reference-item {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style content type */
+.content-type {
+    font-weight: bold;
+}
+
+/* Style date published */
+.date-published {
+    font-style: italic;
+}
+
+/* Style author/photographer */
+.author,
+.photographer {
+    font-weight: bold;
+}
+/*STORYBOARD PAGE*/
+/* Apply a background color and style to the page boxes */
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #0073e6;
+}
+
+.page-box {
+    background-color: #2d68b4;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* Add spacing and center text in page boxes */
+.page-box h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.page-box p {
+    text-align: justify;
+}
+
+/* Style the features section */
+.features-section {
+    background-color: #0073e6;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the heading */
+.features-heading {
+    color: #fff;
+}
+
+/* Style the features box */
+.features-box {
+    background-color: #2d68b4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto; /* Center the box horizontally and add margin for spacing */
+    width: 50%; /* Set the width to 50% of the screen width */
+    color: #fff;
+}
+
+/* Style the features list */
+.features-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style each feature item */
+.feature-item {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.table{
+	align-items:center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+.table img {
+    max-width: 100%; 
+    height: auto; 
+}

@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+	margin:0;
+	padding:0;
+}
+/*Header Banner*/
+.header{
+	min-height:80vh;
+	width:100%;
+	background-image:linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url('../Assets/AOTwebsite.jpg');
+	background-position:center;
+	background-size:cover;
+	position:relative;
+}
+
+/*-----Navigation Bar-----*/
+nav{
+	display:flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navBar{
+	flex:1;
+	text-align:right;
+}
+.navBar ul li{
+	list-style:none;
+	display:inline-block;
+	padding: 8px 12px;
+	position:relative;
+}
+
+.navBar ul li a{
+	color:white;
+	text-decoration:none;
+	font-size:13px;
+}
+.navBar ul li::after{
+	content:'';
+	width:0%;
+	height:2px;
+	background:orange;
+	display:block;
+	margin:auto;
+	transition: 0.5s;
+}
+.navBar ul li:hover::after{
+	transition: 0.5s;
+	width:100%;
+}
+
+nav h1{
+	list-style:none;
+	display:inline-block;
+	padding: 8px 12px;
+	position:relative;
+}
+
+nav h1 a{
+	color:white;
+	text-decoration:none;
+}
+
+
+/*----More about me Header on the banner---*/
+.moreAboutMe{
+	width:90%;
+	color:white;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+}
+.moreAboutMe h1{
+	font-size:62px;
+	
+}
+.moreAboutMe p{
+	margin:10px 0 40px;
+	font-size:16px;
+	color:white;
+}
+/*Banner Button*/
+.myButton{
+	display:inline-block;
+	text-decoration:none;
+	color:white;
+	border: 1px solid white;
+	padding:12px 34px;
+	font-size: 13px;
+	background:transparent;
+	position:relative;
+	cursor:pointer;
+}
+.myButton:hover{
+	border:1px solid blue;
+	background:blue;
+	transition:1s;
+	color: orange;
+}
+body
+{
+	background:Orange; /*change*/
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	min-height:100vh;
+}
+
+.container
+{
+	position:relative;
+	width:100%;
+	max-width:1000px;
+	min-height:1000px;
+	background:white;/*change*/
+	margin:50px;
+	padding-left:100px;
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: 0 35px 55px rgba(0,0,0,0.1);/*change*/
+}
+
+.container .left_side
+{
+	position:relative;
+	background:#003147;/*change*/
+	padding: 40px;
+}
+
+.profileInfo{
+	position:relative;
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	padding-bottom:20px;
+	border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+.profileInfo .imgBox{
+	position:relative;
+	width: 200px;
+	height: 200px;
+	border-radius:50%;
+	overflow: hidden;
+}
+
+.profileInfo .imgBox img{
+	position:absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+}
+
+.profileInfo h2{
+	color: white; /*change*/
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-transform:uppercase;
+	text-align:center;
+	font-weight:600;
+	line-height:1.4em;
+}
+
+.profileInfo h2 span{
+	font-size:0.8em;
+	font-weight:300;
+}
+
+.contact_Info{
+	padding-top:40px;
+}
+.title{
+	color:white;
+	text-transform:uppercase;
+	font-weight:600;
+	letter-spacing:1px;
+	margin-bottom:20px;
+}
+
+.contact_Info ul{
+	position:relative;
+}
+
+.contact_Info ul li{
+	position: relative;
+	list-style: none;
+	margin: 10px 0;
+	cursor:pointer;
+}
+
+.contact_Info ul li .icon{
+	display:inline-block;
+	width:30px;
+	font-size:18px;
+	color:#03A9F4;
+}
+
+.contact_Info ul li span{
+	color:white;
+	font-weight:300;
+}
+
+.education li{
+	margin-bottom:15px;
+	list-style:none;
+}
+
+.education h5{
+	color:#03A9F4;
+	font-weight:500;
+}
+.education h4:nth-child(2){
+	color:#FFF;
+	font-weight:500;
+}
+
+.education h4{
+	color:#FFF;
+	font-weight:300;
+}
+
+.container .right_side
+{
+	position:relative;
+	background:white;/*change*/
+	padding: 40px;
+}
+
+.AboutMe{
+	margin-bottom:50px;
+}
+.AboutMe:last-child{
+	margin-bottom:0;
+}
+
+.profileTitle{
+	color:black;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	margin-bottom:10px;
+}
+
+p{
+	color:#333;
+}
+.AboutMe .box{
+	display:flex;
+	flex-direction:row;
+	margin:30px 0;
+}
+.AboutMe .box .yearCompany{
+	min-width:150px;
+}
+
+.AboutMe .box .yearCompany h5{
+	text-transform:uppercase;
+	color:#848C90;
+	font-weight:600;
+}
+.AboutMe .box .text h4{
+	text-transform:uppercase;
+	color:#2A7DA2;
+	font-size:13px;
+}
+.skills .box{
+	position:relative;
+	width:100%;
+	display:grid;
+	grid-template-columns:150px 1fr;
+	justify-content:center;
+	align-items:center;
+}
+.skills .box{
+	text-transform:uppercase;
+	color:#848C99;
+	font-weight:500;
+}
+.skills .box .percent{
+	position:relative;
+	width:100%;
+	height:10px;
+	background:#F0F0F0;
+}
+.skills .box .percent div{
+	position:absolute;
+	top:0;
+	left:0;
+	background:orange;
+	height:100%
+}
+.interests ul{
+	display:grid;
+	grid-template-columns: repeat(4,1fr);
+	
+}
+
+.interests ul li{
+	list-style:none;
+	color:black;
+	font-weight:500;
+	margin:10px 0;
+}
+.interests ul li .fa{
+	color:#03A9F4;
+	font-size:18px;
+	width:20px;
+}
+
+
+.Mission_VisionCon {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center; /* Center align the headings */
+}
+
+.M_VTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.mission-vision-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove cell spacing */
+}
+
+.mission-vision-table td {
+    padding: 20px;
+    border: 1px solid #ccc; /* Add a border for cells */
+}
+
+.mission-vision-table h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.mission {
+    background-color: white;
+}
+
+.vision {
+    background-color: red;
+}
+/*Footer*/
+ .footer{
+	 background-image:linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url('../Assets/AOTwebsite.jpg');
+	 background-position: center; 
+	 width:100%;
+	 padding: 30px 0;
+	 text-align:center;
+	 color:white;
+ }
+ 
+ .footer h4{
+	
+	margin-top: 20px;
+	margin-bottom:25px;
+	font-weight:600;
+ }
+ 
+ .footer p{
+	color:white;
+ }
+ .icons .fa{
+	 color:#f44336;
+	 margin: 0 13px;
+	 cursor:pointer;
+	 padding: 10px 0;
+ }
